@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            min-height: 100%;
+            overflow: hidden;
+            height: ;
+        }
+.container {
+    
+    max-width: 1280px;
+    margin: 0px auto;
+    height: 3000px;
+    
+}
+@media (max-width: 1280px) {
+    .container {
+        max-width: 970px;
+    }
+}
+@media (max-width: 1000px) {
+    .container {
+        max-width: 750px;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        max-width: none;
+    }
+}
+.wind-logo{
+    position: absolute;
+    margin-left: 17px;
+}
+.health-logo{
+    position: absolute;
+width: 110px;
+height: 24px;
+margin-left: 40px;
+
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+}
+body{
+   /* background: #EBF1FF;*/
+     background: blue;
+}
+.header{
+    margin-top: 50px;
+}
+#navbar {
+        list-style-type: none;
+    text-align: right;
+position: relative;
+    bottom: 1px;
+}
+#navbar li { display: inline; }
+a{
+    text-decoration: none;
+    color: black;
+    margin-left: 1%;
+
+}
+.header__burger{
+    display: none;
+}
+@media (max-width: 767px) {
+    #navbar{
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .header__burger{
+         display: block;
+        position: relative;
+        width: 40px;
+        height: 160px;
+        float: right;
+        margin-right: 20px;
+    }
+    .header__burger span1{
+        position: absolute;
+        background-color: black;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 2px;
+    }
+     .header__burger span2{
+        position: absolute;
+        background-color: black;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 12px;
+    }
+    .header__burger:before,
+   .header__burger:after{
+       content: '';
+        background-color: black;
+        position: absolute;
+width: 100%;
+        height: 2px;
+        left: 0px;
+        bottom: 135px;
+         .header__burger:before{
+             position: absolute;
+             top: 10px;
+         }
+         .header__burger:after{
+            top: 12px;
+         }
+   }
+        .man{
+            position: absolute;
+            right: 2%;
+            
+        }
+
+}
+.dropstyle{
+    position: relative;
+    right: 50px;"
+}
+
+.blu{
+    background: #215EE9;
+box-shadow: 0px 100px 161px rgba(33, 94, 233, 0.08), 0px 64.8148px 94.2894px rgba(33, 94, 233, 0.0607407), 0px 38.5185px 51.2815px rgba(33, 94, 233, 0.0485926), 0px 20px 26.1625px rgba(33, 94, 233, 0.04), 0px 8.14815px 13.1185px rgba(33, 94, 233, 0.0314074), 0px 1.85185px 6.33565px rgba(33, 94, 233, 0.0192593);
+border-radius: 40px;"
+
+
+}
+.header__burger:hover .dropdown-content {display: block}
+#navbar li { display: inline; }
+.dropdown-content {
+  display: none;
+  position: absolute;
+    top: 28px
+
+}
+
+.dropdown-content a {
+  display: block;
+    text-decoration: none;
+
+}
+ #navbar a:hover {
+
+     color: #0096fa;
+ }
+ .point{
+
+     position: relative;
+      width=3px;
+     height=3px;
+     right: 25px;
+     top: 10px;
+     visibility:hidden;
+ }
+#navbar a:hover + .point {visibility: visible}
+.bell{
+    position: relative;
+    margin-right: 50px;
+    top: 5px;
+    margin-left: 10px;
+}
+.vec1{
+    position: absolute;
+    margin-top: 70px;
+    z-index: -5;
+width: 300px;
+    height: 30%;
+    left: 40%;
+   
+}
+.man{
+     position: relative;
+    z-index: -4;
+width: 350px;
+height: 505px;
+ float: right;
+    margin-right: 50px;
+
+ 
+    
+}
+    </style>
+    <script>
+    </script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+         
+    <header class="header">
+
+ <img class="wind-logo" src = "wind.png">
+            <div class = "health-logo">Modsen Health</div>
+            <ul id ="navbar">
+            <li ><a href="">Home</a>
+                <img class="point" src="Ellipse.png" ></li>
+            <li><a href="">Services</a>
+             <img class="point" src="Ellipse.png" ></li>
+            <li><a href="">Clinic</a>
+            <img class="point" src="Ellipse.png" ></li>
+            <li><a href="">Doctors</a>
+            <img class="point" src="Ellipse.png" ></li>
+            <li><a href="" style="margin-right: 37px">Contact </a>
+            <img class="point" style="position: relative; right: 80px" src="Ellipse.png" ></li>
+            <li><a href="">Log In</a>
+            <img class="point" src="Ellipse.png" ></li>
+            <li><a href="" type ="button" class="blu"  style="padding: 10px; color: white";>Register</a></li>
+            <li><img src="Union.png" href="" class="bell"></li>
+            </ul>
+
+    <div class="header__burger">
+        <span1>
+        </span1>
+        <span2>
+        </span2>
+         <div class="dropdown">
+  <div class="dropdown-content">
+    <a href="">Home</a></li>
+          <a href="">Services</a></li>
+          <a href="">Clinic</a></li>
+            <a href="" >Doctors</a></li>
+            <a href="" >Contact </a></li>
+           <a href="" >Log In</a></li>
+           <a href="" >Register</a></li>
+  </div>
+    </div>
+            </ul>
+    </div>
+
+    </header>
+
+<content>
+            <img class="vec1" src=vec1.png alt="not found">
+    <img class="man" src="Hero.png" alt="not found">
+
+
+        </content>
+
+
+</div>
+
+
+
+
+</body>
+
+</html>
